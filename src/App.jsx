@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { STEPS } from "./data/steps";
 import ParticleBackground from "./components/ParticleBackground";
 import TextStep from "./components/TextStep";
@@ -10,6 +10,16 @@ import DinnerTicket from "./components/DinnerTicket";
 const App = () => {
   const [current_step, set_current_step] = useState(0);
   const [is_accepted, set_is_accepted] = useState(false);
+
+  useEffect(() => {
+    // Preload all images
+    STEPS.forEach((step) => {
+      if (step.type === "photo" && step.image) {
+        const img = new Image();
+        img.src = step.image;
+      }
+    });
+  }, []);
 
   const handle_next = () => {
     if (current_step < STEPS.length - 1) {

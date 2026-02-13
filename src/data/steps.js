@@ -13,7 +13,6 @@ export const STEPS = [
       "Porque estamos construyendo juntos la vida que soñamos",
       "Porque admiro tu gentileza y tu corazón",
       "Porque haces que cada día sea más memorable",
-      "Porque eres mi mejor amiga y mi compañera de vida",
       "Porque simplemente no imagino mi vida sin ti",
     ],
   },

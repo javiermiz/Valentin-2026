@@ -16,6 +16,7 @@ const App = () => {
     STEPS.forEach((step) => {
       if (step.type === "photo" && step.image) {
         const img = new Image();
+
         img.src = step.image;
       }
     });

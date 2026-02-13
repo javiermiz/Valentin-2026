@@ -24,32 +24,31 @@ export const STEPS = [
   },
   {
     type: "photo",
-    image: "/images/IMG_0620.JPG",
+    image: "/images/photo-1.jpg",
   },
   {
     type: "photo",
-    image: "/images/IMG_20190518_115829.jpg",
+    image: "/images/photo-2.jpg",
   },
   {
     type: "photo",
-    image: "/images/IMG_20210627_143213.jpg",
+    image: "/images/photo-3.jpg",
   },
   {
     type: "photo",
-    image: "/images/IMG_20210723_114116.jpg",
+    image: "/images/photo-4.jpg",
   },
   {
     type: "photo",
-    image: "/images/LRM_EXPORT_1391378729473_20191026_231548709.jpeg",
+    image: "/images/photo-5.jpg",
   },
   {
     type: "photo",
-    image: "/images/_ROB2972.jpg_compressed.JPEG",
+    image: "/images/photo-6.jpg",
   },
   {
     type: "question",
-    title: "Mi eterna compañera...",
-    content:
-      "¿Quieres seguir siendo mi Valentín por el resto de nuestras vidas?",
+    title: "Mi amor...",
+    content: "¿Quieres seguir siendo mi Valentín?",
   },
 ];

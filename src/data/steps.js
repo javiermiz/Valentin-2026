@@ -51,3 +51,26 @@ export const STEPS = [
     content: "¿Quieres seguir siendo mi Valentín?",
   },
 ];
+
+export const UI_TEXTS = {
+  dinner_ticket: {
+    emoji: "🎟️",
+    title: "Vale por una",
+    prize: "Cena Romántica",
+    valid_for: "Válido para",
+    recipient: "Mi Esposa Amada",
+    date: "15 Feb 2026",
+    location: "Lugar Sorpresa",
+    footer: "¡Sabía que dirías que sí! ❤️",
+  },
+  question: {
+    yes_btn: "¡Sí, quiero!",
+    no_btn: "No 😢",
+  },
+  photo: {
+    alt: "Moment",
+  },
+  navigation: {
+    next_btn_aria: "Next step",
+  },
+};

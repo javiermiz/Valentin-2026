@@ -1,8 +1,10 @@
+import { UI_TEXTS } from "../data/steps";
+
 const NextButton = ({ onClick, className = "" }) => (
   <button
     onClick={onClick}
     className={`bg-red-500 hover:bg-red-600 text-white rounded-full p-4 transition-all hover:scale-110 cursor-pointer shadow-lg ${className}`}
-    aria-label="Next step"
+    aria-label={UI_TEXTS.navigation.next_btn_aria}
   >
     <svg
       width="32"

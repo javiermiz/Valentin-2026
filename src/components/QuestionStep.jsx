@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { UI_TEXTS } from "../data/steps";
 
 const QuestionStep = ({ data, onAccept }) => {
   const [no_btn_style, set_no_btn_style] = useState({});
   const [no_btn_scale, set_no_btn_scale] = useState(1);
+  const { yes_btn, no_btn } = UI_TEXTS.question;
 
   const handle_no_interaction = () => {
     const random_x = Math.random() * 80 - 40; // -40% to 40%
@@ -45,7 +47,7 @@ const QuestionStep = ({ data, onAccept }) => {
             onClick={onAccept}
             className="bg-red-500 hover:bg-red-600 text-white text-xl font-medium py-3 px-10 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg cursor-pointer z-10"
           >
-            ¡Sí, quiero!
+            {yes_btn}
           </button>
           {no_btn_scale > 0 && (
             <button
@@ -58,7 +60,7 @@ const QuestionStep = ({ data, onAccept }) => {
               }}
               className="bg-gray-400 hover:bg-gray-500 text-white text-xl font-medium py-3 px-10 rounded-full cursor-pointer whitespace-nowrap"
             >
-              No 😢
+              {no_btn}
             </button>
           )}
         </div>

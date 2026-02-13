@@ -1,16 +1,70 @@
-# React + Vite
+# 💖 Valentín 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web interactiva y romántica sencilla para pedirle a esa persona especial que sea tu Valentín.
 
-Currently, two official plugins are available:
+## 🚀 Cómo empezar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  **Instalar dependencias:**
 
-## React Compiler
+    ```bash
+    npm install
+    ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-## Expanding the ESLint configuration
+## 🎨 Personalización
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Todo el contenido de la aplicación está diseñado para ser fácilmente modificable sin necesidad de tocar el código complejo.
+
+### 📝 Cambiar Textos
+
+Todos los textos de la aplicación (saludos, razones, preguntas, textos del ticket, etc.) se encuentran en un solo archivo:
+
+📍 `src/data/steps.js`
+
+Simplemente abre este archivo y edita los textos dentro de las comillas.
+
+**Ejemplo:**
+
+```javascript
+export const STEPS = [
+  {
+    type: "greeting",
+    title: "Hola mi amor", // Cambia esto
+    content: "Eres lo mejor que me ha pasado...", // Cambia esto
+  },
+  // ...
+];
+```
+
+También puedes cambiar los textos de la interfaz (botones, ticket de cena, fechas) en la sección `UI_TEXTS` al final del mismo archivo.
+
+### 📸 Cambiar Fotos
+
+Las fotos se encuentran en la carpeta `public/images/` y siguen una secuencia numerada para facilitar su reemplazo.
+
+Para cambiar una foto:
+
+1.  Ten tu nueva foto lista (formato `.jpg` recomendado).
+2.  Renómbrala para que coincida con la que quieres reemplazar (ej. `photo-1.jpg`, `photo-2.jpg`, etc.).
+3.  Reemplaza el archivo existente en `public/images/` con tu nueva foto.
+
+**Secuencia de fotos:**
+
+- `photo-1.jpg`
+- `photo-2.jpg`
+- `photo-3.jpg`
+- `photo-4.jpg`
+- `photo-5.jpg`
+- `photo-6.jpg`
+
+Si necesitas agregar más fotos o cambiar los nombres, puedes hacerlo editando también el archivo `src/data/steps.js` en la sección de pasos tipo `photo`.
+
+## 🛠️ Tecnologías
+
+- React
+- Vite
+- Tailwind CSS

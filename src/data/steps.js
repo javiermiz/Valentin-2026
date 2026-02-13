@@ -1,26 +1,26 @@
 export const STEPS = [
   {
     type: "greeting",
-    title: "Feliz San Valentin",
+    title: "Feliz San Valentín, Mi amor",
     content:
-      "Hoy quiero dedicarte estas palabras desde lo mas profundo de mi corazon.",
+      "Hoy quiero recordarte lo inmensamente afortunado que soy de compartir mi vida contigo.",
   },
   {
     type: "reasons",
-    title: "Razones por las que te quiero",
+    title: "Razones para amarte cada día más",
     items: [
-      "Porque tu sonrisa ilumina mis dias",
-      "Porque contigo todo es mejor",
-      "Porque me haces ser mejor persona",
-      "Porque cada momento a tu lado es especial",
-      "Porque tu risa es mi cancion favorita",
-      "Porque eres mi persona favorita en el mundo",
+      "Porque amo verte sonreír",
+      "Porque estamos construyendo juntos la vida que soñamos",
+      "Porque admiro tu gentileza y tu corazón",
+      "Porque haces que cada día sea más memorable",
+      "Porque eres mi mejor amiga y mi compañera de vida",
+      "Porque simplemente no imagino mi vida sin ti",
     ],
   },
   {
     type: "moments",
-    title: "Nuestros momentos juntos",
-    content: "Año y medio desde el dia mas feliz de nuestras vidas",
+    title: "Nuestra historia",
+    content: "Cada recuerdo a tu lado es un tesoro que guardo en el alma.",
   },
   {
     type: "photo",
@@ -48,7 +48,8 @@ export const STEPS = [
   },
   {
     type: "question",
-    title: "La gran pregunta...",
-    content: "Quieres ser mi valentin?",
+    title: "Mi eterna compañera...",
+    content:
+      "¿Quieres seguir siendo mi Valentín por el resto de nuestras vidas?",
   },
 ];

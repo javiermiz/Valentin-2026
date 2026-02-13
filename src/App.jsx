@@ -5,6 +5,7 @@ import TextStep from "./components/TextStep";
 import PhotoStep from "./components/PhotoStep";
 import QuestionStep from "./components/QuestionStep";
 import NextButton from "./components/NextButton";
+import DinnerTicket from "./components/DinnerTicket";
 
 const App = () => {
   const [current_step, set_current_step] = useState(0);
@@ -24,14 +25,7 @@ const App = () => {
 
   const render_content = () => {
     if (is_accepted) {
-      return (
-        <div className="text-center animate-bounce z-10">
-          <h1 className="text-5xl font-serif font-bold text-red-600 mb-4">
-            ¡Gracias por decir que sí! 💖
-          </h1>
-          <p className="text-2xl text-gray-600 font-light">Te amo mucho.</p>
-        </div>
-      );
+      return <DinnerTicket />;
     }
 
     switch (step_data.type) {
